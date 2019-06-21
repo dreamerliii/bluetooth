@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:background="#ffffff"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_uid"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="147dp"
+                android:text="机器号："
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="140dp" />
+            <TextView
+                android:id="@+id/uid_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/uid"
+                android:text="12313213"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_number"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/layout_uid"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="人数："
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="140dp"/>
+
+            <TextView
+                android:id="@+id/number_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/number"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/layout_number"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="温度："
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="140dp"/>
+            <TextView
+                android:id="@+id/temperature_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/temperature"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"/>
+            <!--<TextView-->
+            <!--android:id="@+id/temperature_symbol"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/temperature_information"-->
+            <!--android:text="℃"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_centerVertical="true"/>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/layout_temperature"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="湿度："
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="140dp"/>
+            <TextView
+                android:id="@+id/humidity_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/humidity"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"/>
+            <!--<TextView-->
+            <!--android:id="@+id/humidity_symbol"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/humidity_information"-->
+            <!--android:text="%"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_centerVertical="true"/>-->
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/see_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTitle"
+        android:layout_centerHorizontal="true"
+        android:text="查看温湿度"
+        android:clickable="true"/>
+
+</RelativeLayout>
